@@ -37,7 +37,7 @@ export const Route = createFileRoute("/api/analyze")({
 
         const genAI = new GoogleGenerativeAI(apiKey);
         const model = genAI.getGenerativeModel({
-          model: "gemini-3.8-flash",
+          model: "gemini-2.5-flash",
         });
         let body: { fileName: string; mimeType: string; dataUrl: string };
         try {
